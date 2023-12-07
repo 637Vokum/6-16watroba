@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function okno_zamknij_Watroba()
+                {
+                window.close()
+                }
+        </script>
+    </head>
+    <body>
+        <font style="color: green; font-size: 31px;">
+            <script>
+                var D1_Wat = parseInt(prompt("Podaj pierwszy dzień: "));
+                var D2_Wat = parseInt(prompt("Podaj drugi dzień: "));
+                if (D1_Wat < 1 || D1_Wat > 31 || D2_Wat > D1_Wat || D2_Wat > 31) {
+                    alert("Podane dni są niepoprawne.");
+                }else{
+                    var roznica = Math.abs((D2_Wat - D1_Wat) * 86400);
+                }
+                document.write("Różnica między tymi dniami wynosi: ", roznica, " sekund");
+            </script>
+        </font>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Watroba()"/>
+    </body>
+</html>

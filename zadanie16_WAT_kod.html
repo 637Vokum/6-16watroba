@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function Watroba()
+                {
+                window.close()
+                }
+        </script>
+    </head>
+    <body>
+        HTML:<br>
+        <textarea rows="29" cols="100" style="overflow:hidden" readonly>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>proste obliczenia</title>
+        <meta charset="utf-8">
+        <script>
+            function okno_zamknij_Watroba()
+                {
+                window.close()
+                }
+        </script>
+    </head>
+    <body>
+        <div style="color:red;font-size:50px">
+        <script language="JavaScript">
+            var liczba1 = prompt("podaj A=","");
+            var a_WAT = parseFloat(liczba1);
+            var liczba2 = prompt("podaj B=","");
+            var b_WAT = parseFloat(liczba2);
+            var wynik = (a_WAT*a_WAT*a_WAT)+(3*(a_WAT*a_WAT)*b_WAT)+(3*a_WAT*(b_WAT*b_WAT))+(b_WAT*b_WAT*b_WAT);
+            document.write("A="+a_WAT+"<br>");
+            document.write("B="+b_WAT+"<br>");
+            document.write("("+a_WAT+"+"+b_WAT+")<sup>3</sup>="+a_WAT+"<sup>3</sup>+"+"3*"+a_WAT+"<sup>2</sup>*"+b_WAT+"+"+"3*"+a_WAT+"*"+b_WAT+"<sup>2</sup>"+"+"+b_WAT+"<sup>3</sup>="+wynik);
+        </script>
+        </div>
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Watroba()">
+    </body>
+</html>
